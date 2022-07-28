@@ -5,8 +5,13 @@
     margin: 0 auto;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .first-section,
-.third-section {
+.third-section,
+.fourth-section {
     background-color: #222C6B;
     color: #fff;
 }
@@ -26,14 +31,15 @@
     padding-top: 20px;
   }
   
-  .left {
+  .left-1 {
     left: 0;
   }
   
-  .right {
+  .right-1 {
     right: 0;
   }
 
   .centered {
     text-align: center;
   }
+  
