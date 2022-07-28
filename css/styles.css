@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.first-section {
+    background-color: #222C6B;
+    color: #fff;
+}
+
+.second-section {
+    background-color: #f5f5f5;
+    color: #222C6B;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    right: 0;
+  }
+
+  .centered {
+    text-align: center;
+  }
