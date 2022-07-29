@@ -8,72 +8,265 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d08979ce9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/space.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
+<style>
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: all 200ms ease-in-out;
+    }
+
+    .app-header.hidden {
+        transform: translateY(calc(-100% - 1px));
+    }
+
+    .app-nav {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: #000;
+        padding: 20px;
+        background: transparent;
+    }
+
+    .app-nav a {
+        color: white;
+    }
+
+    .app-nav li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .app-nav ul {
+        list-style: none;
+        justify-content: baseline;
+    }
+
+    .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        opacity: 0;
+        height: 100%;
+        z-index: -1;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    .header-bg.op {
+        opacity: 0.6 !important;
+    }
+
+    section {
+        position: relative;
+    }
+
+    .section-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0415d6;
+        opacity: 0.2;
+    }
+
+    #app-nav-mb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-600px);
+        z-index: 8000;
+        background-color: transparent;
+        transition: transform 150ms ease-in-out;
+    }
+
+    #app-nav-mb-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        min-height: 150px;
+    }
+
+    #app-nav-mb-ul li {
+        padding: 5px 0;
+    }
+
+    #app-nav-mb-ul li a {
+        color: #fff;
+    }
+
+    #burger {
+        display: none;
+        z-index: 10010;
+    }
+
+    #burger > div {
+        margin: 0;
+    }
+
+    i.fa-bars {
+        cursor: pointer;
+        font-size: 24px;
+        padding-right: 32px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .app-nav ul {
+            display: none;
+        }
+
+        header {
+            background-color: #000;
+        }
+
+        #burger {
+            display: flex;
+            flex-direction: row-reverse;
+            flex: 1;
+            color: white;
+        }
+
+        .header-bg,
+        .header-bg.op {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('scroll', (e) => {
+        const elem = document.getElementsByClassName('header-bg')[0];
+        const header = document.getElementsByClassName('app-header')[0];
+
+        if (window.scrollY <= 10) {
+            header.className = 'app-header'
+        }
+        
+        if (window.scrollY >= 150) {
+            header.className = 'app-header hidden'
+        }
+
+        if (window.scrollY >= 500) {
+            elem.className = 'header-bg op'
+            header.className = 'app-header'
+        } else {
+            elem.className = 'header-bg'
+        }
+    })
+
+    let isOpen = false;
+
+    function handleClick() {
+        const elem = document.getElementById('app-nav-mb');
+        const logo = document.getElementById('logo');
+        
+        if (!isOpen) {
+            elem.style.transform = 'translateY(0px)'
+            logo.style.display = 'none';
+            isOpen = true;
+        } else {
+            elem.style.transform = 'translateY(-600px)'
+            isOpen = false;
+            logo.style.display = 'block';
+        }
+    }
+</script>
+
 <body>
     <!-- *************************************** Header Nav *************************************** -->
-    <section style="background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <div style="width: 100%; z-index: 50;">
-            <header>
-                <div style="
-                    background-color: #222C6B; 
-                    padding: 10px 54px;
-                    display: flex;
-                    flex-direction: row-reverse;
-                    overflow: hidden;
-                    font-size: 15px;
-                    color: #fff;
-                    text-transform: uppercase;
-                    background-image: url(images/s-1/left_main_bg.png);
-                    "
-                >
-                    <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Login</a>
-                    <span style="padding: 0 10px; margin: 0;">|</span>
-                    <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Signup</a>
-                </div>
-
-                <div style="
-                    position: relative;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    background: #fff;
-                    width: 100%;
-                    color: #000;
-                    padding: 20px;
-                    "
-                >
-                    <a href="#">
-                        <img src="images/s-1/wcl_logo.png" alt="wcl logo" style="width: 300px; height: 53px;" />
-                    </a>
-                    <ul style="min-width: max-content; display: flex; justify-content: center; align-items: center; position: relative; right: 100px; top: 3px; list-style: none; margin: 0 auto;">
-                        <li style="padding: 0 50px;">
-                            <a href="#home" style="text-decoration: none;">Home</a>
-                        </li>
-                        <li style="padding: 0 50px;">
-                            <a href="#about" style="text-decoration: none;">About Us</a>
-                        </li>
-                        <li style="padding: 0 50px;">
-                            <a href="#products" style="text-decoration: none;">Products & Services</a>
-                        </li>
-                        <li style="padding: 0 50px;">
-                            <a href="#currency" style="text-decoration: none;">Crypto Currency</a>
-                        </li>
-                        <li style="padding: 0 50px;">
-                            <a href="#faq" style="text-decoration: none;">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
+    <header class="app-header">
+        <div style="
+            /* background-color: #222C6B;  */
+            padding: 10px 54px;
+            display: flex;
+            flex-direction: row-reverse;
+            overflow: hidden;
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            max-height: 40px;
+            min-height: 40px;
+            z-index: 9999;
+            "
+        >
+            <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Login</a>
+            <span style="padding: 0 10px; margin: 0;">|</span>
+            <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Signup</a>
         </div>
-    </section>
+        <div class="header-bg"></div>
+        <div class="app-nav">
+            <a href="#" style="margin: 0;" id="logo">
+                <img src="images/s-1/wcl_logo.png" alt="wcl logo" style="width: 200px; height: 47px;" />
+            </a>
+            <ul>
+                <li>
+                    <a href="#home" style="text-decoration: none;">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="text-decoration: none;">About Us</a>
+                </li>
+                <li>
+                    <a href="#products" style="text-decoration: none;">Products & Services</a>
+                </li>
+                <li>
+                    <a href="#currency" style="text-decoration: none;">Crypto Currency</a>
+                </li>
+                <li>
+                    <a href="#faq" style="text-decoration: none;">FAQ</a>
+                </li>
+            </ul>
+            <div id="burger" onclick="handleClick()">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div id="app-nav-mb">
+            <ul id="app-nav-mb-ul">
+                <li>
+                    <a href="#home" style="text-decoration: none;">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="text-decoration: none;">About Us</a>
+                </li>
+                <li>
+                    <a href="#products" style="text-decoration: none;">Products & Services</a>
+                </li>
+                <li>
+                    <a href="#currency" style="text-decoration: none;">Crypto Currency</a>
+                </li>
+                <li>
+                    <a href="#faq" style="text-decoration: none;">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
 
     <!-- *************************************** First Section *************************************** -->
-    <section class="first-section" style="background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <section class="padding-container" style="display: flex; padding-bottom: 50px;">
-            <section class="split left-1" style="position: relative; top: 40px; flex-wrap: wrap;">
+    <section class="first-section" style="padding-top: 200px; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
+        <!-- <div class="section-bg"></div> -->
+        <section class="padding-container" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
+            <section class="split left-1" style="position: relative; top: 40px;">
                 <div>
                     <!-- <img src="images/s-1/wcl_text_gold.png" alt="World Crypto Life" style="width: 300px; height: 53px;" /> -->
                     <h1 style="text-transform: uppercase; font-size: 46px; color: #DABE4E; padding-bottom: 20px;">World Crypto Life</h1>
@@ -86,7 +279,7 @@
                     </p>
                 </div>
             </section>
-            <section class="split right-1" style="flex-wrap: wrap;">
+            <section class="split right-1">
                 <div class="centered" style="color: #fff;">
                     <img src="images/s-1/wcl_main.png" alt="wcl_main" style="width: 584px; height: 418px; position: relative; bottom: 80px;" />
                 </div>
@@ -94,7 +287,8 @@
         </section>
     </section>
 
-    <section style="background-image: url(images/s-1/welcome_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="first-section" style="background-image: url(images/s-1/welcome_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; flex-wrap: wrap; background-blend-mode: hard-light;">
+        <!-- <div class="section-bg"></div> -->
         <section class="side-padding-container">
             <div style="display: flex; align-items: center;">
                 <img src="images/s-1/long-bar.png" alt="bar" style="width: 300px; height: 6px; margin-right: 0;" />
@@ -136,7 +330,7 @@
     </section>
 
     <!-- *************************************** Second Section *************************************** -->
-    <section class="second-section side-padding-container">
+    <section class="second-section side-padding-container" style="flex-wrap: wrap;">
         <div class="space-80"></div>
         <div style="padding: 0 12%; text-align: center; font-size: 40px;">
             <h1>Everyday Use Worldwide</h1>
@@ -220,7 +414,7 @@
     </section>
 
     <!-- *************************************** Third Section *************************************** -->
-    <section class="third-section padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="third-section padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; flex-wrap: wrap; background-blend-mode: hard-light;">
         <section class="split" style="padding-left: 50px;">
             <div>
                 <h1 style="font-size: 46px;">
@@ -298,58 +492,56 @@
         </section>
     </section>
     
-    <!-- *************************************** Fourth Section *************************************** -->
-    <section class="fourth-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <section class="split" style="padding-right: 50px;">
-            <div class="centered" style="overflow: hidden;">
-                <img src="images/s-4/wallet.png" alt="GPoint Wallet" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
-            </div>
+    <!-- *************************************** Fourth and Fifth Section *************************************** -->
+    <section class="fourth-and-fifth-section side-padding-container" style="display: flex; flex-direction: column; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
+        <section style="display: flex; flex-wrap: wrap; min-width: 700px;">
+            <section class="split" style="padding-right: 50px;">
+                <div class="centered" style="overflow: hidden;">
+                    <img src="images/s-4/wallet.png" alt="GPoint Wallet" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
+                </div>
+            </section>
+
+            <section class="split">
+                <div class="space-30"></div>
+                <div>
+                    <h1 style="font-size: 46px;">
+                        GPoint Wallet
+                    </h1>
+                </div>
+                <div class="space-10"></div>
+                <article style="width: 80%; margin: 0;">
+                    <p style="font-size: 20px; color: #C6CAEE;">
+                        Our most prominent milestone has been the establishment of a global method which accessible all around the world for users by having a major wallet account. 
+                        GPoints are synced with global exchange wallet which can be used for all the transactions and withdraw USD to GPoint Prepaid VISA Card, powered by NetSpend.
+                    </p>
+                </article>
+                <div class="space-30"></div>
+                <article style="width: 80%; margin: 0; color: #C6CAEE;">
+                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                        <span style="margin: 0 10px 0 0;">&#8226;</span>
+                        <p style="margin: 0;">
+                            Benefits from the community, such as reward, mileages, affiliated local shops, swapping with G Points
+                        </p>
+                    </div>
+                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                        <span style="margin: 0 10px 0 0;">&#8226;</span>
+                        <p style="margin: 0;">
+                            GPoint Wallet provides financial freedom in global everyday usage.
+                        </p>
+                    </div>
+                </article>
+                <div style="margin-top: 30px;">
+                    <form>
+                        <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
+                            Visit Gpoint Wallet
+                        </button>
+                    </form>
+                </div>
+            </section>
         </section>
 
-        <section class="split">
-            <div class="space-30"></div>
-            <div>
-                <h1 style="font-size: 46px;">
-                    GPoint Wallet
-                </h1>
-            </div>
-            <div class="space-10"></div>
-            <article style="width: 80%; margin: 0;">
-                <p style="font-size: 20px; color: #C6CAEE;">
-                    Our most prominent milestone has been the establishment of a global method which accessible all around the world for users by having a major wallet account. 
-                    GPoints are synced with global exchange wallet which can be used for all the transactions and withdraw USD to GPoint Prepaid VISA Card, powered by NetSpend.
-                </p>
-            </article>
-            <div class="space-30"></div>
-            <article style="width: 80%; margin: 0; color: #C6CAEE;">
-                <div style="display: flex; padding-bottom: 2px; margin: 0;">
-                    <span style="margin: 0 10px 0 0;">&#8226;</span>
-                    <p style="margin: 0;">
-                        Benefits from the community, such as reward, mileages, affiliated local shops, swapping with G Points
-                    </p>
-                </div>
-                <div style="display: flex; padding-bottom: 2px; margin: 0;">
-                    <span style="margin: 0 10px 0 0;">&#8226;</span>
-                    <p style="margin: 0;">
-                        GPoint Wallet provides financial freedom in global everyday usage.
-                    </p>
-                </div>
-            </article>
-            <div style="margin-top: 30px;">
-                <form>
-                    <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
-                        Visit Gpoint Wallet
-                    </button>
-                </form>
-            </div>
-        </section>
-    </section>
-    
-    <!-- *************************************** Fifth Section *************************************** -->
-    <section class="fifth-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <section class="split">
-            <div class="space-50"></div>
-            <div>
+        <section style="display: flex; flex-wrap: wrap; min-width: 700px;">
+            <section class="split" style="margin: 0;">
                 <div style="font-size: 46px; text-align: center;">
                     <h1>GPoint Ecosystem</h1>
                 </div>
@@ -374,7 +566,7 @@
                                     <img src="images/s-5/mobile.png" alt="Mobile icon" style="width: 70px; height: 70px;" />
                                     <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">Mobile App</p>
                                 </div>
-                               
+                            
                             </div>
                             <div style="padding: 10px; display: flex; align-content: center;">
                                 <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
@@ -385,20 +577,19 @@
                         </li>
                     </ul>
                 </section>
-            </div>
-        </section>
+            </section>
 
-        <section class="split" style="padding-top: 0;">
-            <div class="centered" style="float: left; overflow: hidden;">
-                <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" style="width: 483px; height: 652px; position: relative; bottom: 110px; overflow-y: scroll;" />
-            </div>
+            <section class="split" style="margin: 0; padding-top: 0;">
+                <div class="centered" style="max-height: 500px;">
+                    <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
+                </div>
+            </section>
         </section>
-
-        <!-- <div class="space-200"></div> -->
     </section>
 
+
     <!-- *************************************** Sixth Section *************************************** -->
-    <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
         <section style="margin-left: 100px;">
             <div class="space-100"></div>
             <div>
@@ -456,7 +647,7 @@
     </section>
 
     <!-- *************************************** Seventh Section *************************************** -->
-    <section class="seventh-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="seventh-section side-padding-container" style="display: flex; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
         <section class="split" style="display: flex;">
             <div>
                 <div style="text-transform: uppercase; margin-bottom: 30px;">
@@ -569,7 +760,7 @@
     </section>
 
     <!-- *************************************** Ninth Section *************************************** -->
-    <section class="ninth-section side-padding-container" style="background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="ninth-section side-padding-container" style="background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
         <div class="space-100"></div>
         <article class="split" style="display: flex; flex-direction: column; padding-top: 0; margin: 0;">
             <h2 style="margin-left: 50px;">
@@ -693,8 +884,8 @@
     </section>
 
     <!-- *************************************** Tenth Section *************************************** -->
-    <section class="tenth-section padding-container">
-        <section style="display: flex; background-image: url(images/s-10/new_world.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="tenth-section padding-container" style="background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
+        <section style="display: flex;">
             <div class="split" style="display: flex;">
                 <div class="space-200"></div>
             </div>
@@ -747,9 +938,11 @@
         <section style="display: flex;">
             <div class="split">
                 <article>
-                    <h1 style="font-size: 46px; text-transform: uppercase; text-align: end; margin-right: 30px;">Unseen Technology</h1>
+                    <h1 style="font-size: 46px; text-transform: uppercase; text-align: start; width: 80%;">
+                        Unseen Technology
+                    </h1>
                     <div class="space-10"></div>
-                    <div style="color: #C6CAEE; width: 80%; margin-right: 0; text-align: start;">
+                    <div style="color: #C6CAEE; width: 80%; text-align: start;">
                         <p>
                             Using a blockchain is cryptographically secure – the ledger is distributed across all nodes in the system making hacking near impossible. 
                             All of the solidity Ethereum smart contract code used for the token sale and vault account was fully audited by SmartDec, 
