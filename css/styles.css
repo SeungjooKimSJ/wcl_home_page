@@ -13,15 +13,26 @@ body {
 .third-section,
 .fourth-section,
 .fifth-section,
-.sixth-section {
+.sixth-section,
+.seventh-section,
+.ninth-section {
     background-color: #222C6B;
     color: #fff;
 }
 
 .second-section {
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     color: #222C6B;
 }
+
+.eighth-section {
+    background-color: #F5F5F5;
+    color: #000;
+}
+
+/* .sixth-section section {
+    background-image: url(../images/s-7/);
+} */
 
 .split {
     height: 100%;
