@@ -178,6 +178,16 @@
         text-align: center;
     }
 
+    .padding-container {
+        padding: 100px 12%;
+    }
+
+    .side-padding-container {
+        padding: 0 12%;
+    }
+
+    /****************************** Space ******************************/
+
     .space-10 {
         display: block;
         width: 10px;
@@ -226,22 +236,7 @@
         min-height: 100px;
     }
 
-    .vertical-space {
-        display: block;
-        width: 70px;
-        min-width: 70px;
-        height: 70px;
-        min-height: 70px;
-    }
-
-    .padding-container {
-        padding: 100px 12%;
-    }
-
-    .side-padding-container {
-        padding: 0 12%;
-    }
-
+    /****************************** Media Query ******************************/
 
     @media only screen and (max-width: 991px) {
         .app-nav ul {
@@ -261,6 +256,12 @@
 
         .header-bg,
         .header-bg.op {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 915px) {
+        .none {
             display: none;
         }
     }
@@ -397,7 +398,7 @@
             </section>
             <section class="split right-1" style="min-width: 450px;">
                 <div class="centered" style="color: #fff;">
-                    <img src="images/s-1/wcl_main.png" alt="wcl_main" style="width: 584px; height: 418px; position: relative; bottom: 80px;" />
+                    <img src="images/s-1/wcl_main.png" alt="wcl_main" class="none" style="width: 584px; height: 418px; position: relative; bottom: 80px;" />
                 </div>
             </section>
         </section>
@@ -603,7 +604,7 @@
             <div class="space-200"></div>
             <div class="space-200"></div>
             <div class="centered" style="float: left; overflow: hidden;">
-                <img src="images/s-3/market.png" alt="GPoint Market" style="width: 687px; height: 471px; position: relative; right: 35px; bottom: 25px; overflow-y: scroll;" />
+                <img src="images/s-3/market.png" alt="GPoint Market" class="none" style="width: 687px; height: 471px; position: relative; right: 35px; bottom: 25px; overflow-y: scroll;" />
             </div>
         </section>
     </section>
@@ -613,7 +614,7 @@
         <section style="display: flex; flex-wrap: wrap;">
             <section class="split" style="padding-right: 50px; min-width: 450px;">
                 <div class="centered" style="overflow: hidden;">
-                    <img src="images/s-4/wallet.png" alt="GPoint Wallet" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
+                    <img src="images/s-4/wallet.png" alt="GPoint Wallet" class="none" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
                 </div>
             </section>
 
@@ -697,7 +698,7 @@
 
             <section class="split" style="margin: 0; padding-top: 0; min-width: 450px;">
                 <div class="centered" style="max-height: 500px;">
-                    <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
+                    <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" class="none" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
                 </div>
             </section>
         </section>
@@ -800,7 +801,7 @@
             </div>
             <div>
                 <div style="position: relative; top: 170px; right: 80px; min-width: 300px;">
-                    <img src="images/s-7/finl_live.png" alt="FINL Live" style="width: 316px; height: 379px" />
+                    <img src="images/s-7/finl_live.png" alt="FINL Live" class="none" style="width: 316px; height: 379px" />
                 </div>
             </div>
         </section>
