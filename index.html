@@ -39,6 +39,17 @@
         transform: translateY(calc(-100% - 1px));
     }
 
+    .app-header-text {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .app-header-text:hover {
+        color: #FDBF44;
+        transition: all 0.4s ease-in-out;
+    }
+
     .app-nav {
         position: relative;
         display: flex;
@@ -116,10 +127,6 @@
         padding: 3px;
     }
 
-    #app-nav-mb-ul li a {
-        color: #fff;
-    }
-
     #burger {
         display: none;
         z-index: 10010;
@@ -133,6 +140,13 @@
         cursor: pointer;
         font-size: 24px;
         padding-right: 32px;
+        padding-bottom: 27px;
+        transition: all 0.7s ease-in-out;
+    }
+
+    i.fa-bars:hover {
+        color: #FDBF44;
+        transition: all 0.7s ease-in-out;
     }
 
     .first-section,
@@ -190,6 +204,36 @@
         margin: 10px;
         text-transform: uppercase;
         color: #000;
+    }
+
+    /****************************** Button ******************************/
+
+    .btn-w {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #FDBF44;
+        border-radius: 20px;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .btn-b {
+        color: #000;
+        background-color: transparent;
+        border: 2px solid #FDBF44;
+        border-radius: 20px;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .btn-w:hover,
+    .btn-b:hover {
+        background-color: #FDBF44;
+        color: #000;
+        transition: all 0.7s ease-in-out;
     }
 
     /****************************** Space ******************************/
@@ -300,39 +344,45 @@
     function handleClick() {
         const elem = document.getElementById('app-nav-mb');
         const logo = document.getElementById('logo');
+        const burgerIcon = document.getElementById('burgerIcon');
 
         if (!isOpen) {
             elem.style.transform = 'translateY(0px)'
-            logo.style.display = 'none';
+            logo.style.display = 'none'
             isOpen = true;
         } else {
             elem.style.transform = 'translateY(-600px)'
             isOpen = false;
-            logo.style.display = 'block';
+            logo.style.display = 'block'
+        }
+
+        if (isOpen) {
+            burgerIcon.style.color = '#FDBF44';
+        } else {
+            burgerIcon.style.color = '#fff';
         }
     }
+
 </script>
 
 <body>
     <!-- *************************************** Header Nav *************************************** -->
     <header class="app-header">
         <div style="
-            /* background-color: #222C6B;  */
             padding: 10px 54px;
             display: flex;
             flex-direction: row-reverse;
             overflow: hidden;
             font-size: 15px;
-            color: #fff;
             text-transform: uppercase;
             max-height: 40px;
             min-height: 40px;
             z-index: 9999;
             "
         >
-            <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Login</a>
-            <span style="padding: 0 10px; margin: 0;">|</span>
-            <a href="#" style="margin: 0; color: #fff; text-decoration: none;">Signup</a>
+            <a href="#" class="app-header-text" style="margin: 0;">Login</a>
+            <span style="padding: 0 10px; margin: 0; color: #fff;">|</span>
+            <a href="#" class="app-header-text" style="margin: 0;">Signup</a>
         </div>
         <div class="header-bg"></div>
         <div class="app-nav">
@@ -341,43 +391,43 @@
             </a>
             <ul>
                 <li>
-                    <a href="#home" style="text-decoration: none;">Home</a>
+                    <a href="#home" class="app-header-text">Home</a>
                 </li>
                 <li>
-                    <a href="#about" style="text-decoration: none;">About Us</a>
+                    <a href="#about" class="app-header-text">About Us</a>
                 </li>
                 <li>
-                    <a href="#products" style="text-decoration: none;">Products &amp; Services</a>
+                    <a href="#products" class="app-header-text">Products &amp; Services</a>
                 </li>
                 <li>
-                    <a href="#currency" style="text-decoration: none;">Crypto Currency</a>
+                    <a href="#currency" class="app-header-text">Crypto Currency</a>
                 </li>
                 <li>
-                    <a href="#faq" style="text-decoration: none;">FAQ</a>
+                    <a href="#faq" class="app-header-text">FAQ</a>
                 </li>
             </ul>
             <div id="burger" onclick="handleClick()">
                 <div>
-                    <i class="fa-solid fa-bars" style="padding-bottom: 27px;"></i>
+                    <i class="fa-solid fa-bars" id="burgerIcon"></i>
                 </div>
             </div>
         </div>
         <div id="app-nav-mb">
             <ul id="app-nav-mb-ul">
                 <li>
-                    <a href="#home" style="text-decoration: none;">Home</a>
+                    <a href="#home" class="app-header-text">Home</a>
                 </li>
                 <li>
-                    <a href="#about" style="text-decoration: none;">About Us</a>
+                    <a href="#about" class="app-header-text">About Us</a>
                 </li>
                 <li>
-                    <a href="#products" style="text-decoration: none;">Products &amp; Services</a>
+                    <a href="#products" class="app-header-text">Products &amp; Services</a>
                 </li>
                 <li>
-                    <a href="#currency" style="text-decoration: none;">Crypto Currency</a>
+                    <a href="#currency" class="app-header-text">Crypto Currency</a>
                 </li>
                 <li>
-                    <a href="#faq" style="text-decoration: none;">FAQ</a>
+                    <a href="#faq" class="app-header-text">FAQ</a>
                 </li>
             </ul>
         </div>
@@ -597,7 +647,7 @@
             </article>
             <div style="margin-top: 30px;">
                 <form>
-                    <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
+                    <button class="btn-w">
                         Visit Gpoint Market
                     </button>
                 </form>
@@ -652,7 +702,7 @@
                 </article>
                 <div style="margin-top: 30px;">
                     <form>
-                        <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
+                        <button class="btn-w">
                             Visit Gpoint Wallet
                         </button>
                     </form>
@@ -828,7 +878,7 @@
                     </article>
                     <div style="margin-top: 30px;">
                         <form>
-                            <button style="border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #000; background-color: transparent; cursor: pointer;">
+                            <button class="btn-b">
                                 Learn More
                             </button>
                         </form>
@@ -848,7 +898,7 @@
                     </article>
                     <div style="margin-top: 30px;">
                         <form>
-                            <button style="border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #000; background-color: transparent; cursor: pointer;">
+                            <button class="btn-b">
                                 Learn More
                             </button>
                         </form>
@@ -868,7 +918,7 @@
                     </article>
                     <div style="margin-top: 30px;">
                         <form>
-                            <button style="border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #000; background-color: transparent; cursor: pointer;">
+                            <button class="btn-b">
                                 Learn More
                             </button>
                         </form>
@@ -1048,7 +1098,7 @@
                     </div>
                 </article>
                 <form style="margin-top: 30px;">
-                    <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
+                    <button class="btn-w">
                         Visit GPoint Market
                     </button>
                 </form>
@@ -1091,7 +1141,7 @@
                             </div>
                         </div>
                         <form style="margin-top: 30px;">
-                            <button style="text-transform: uppercase; border: 2px solid #FDBF44; border-radius: 20px; padding: 12px 30px; color: #fff; background-color: transparent; cursor: pointer;">
+                            <button class="btn-w">
                                 Visit GPoint Market
                             </button>
                         </form>
