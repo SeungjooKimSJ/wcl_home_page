@@ -7,14 +7,22 @@
     <title>World Crypto Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d08979ce9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/space.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/space.css">
+    <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <style>
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
     body {
+        font-family: 'Inter', sans-serif;
         overflow-x: hidden;
     }
 
@@ -127,6 +135,114 @@
         padding-right: 32px;
     }
 
+    .first-section,
+    .third-section,
+    .fourth-and-fifth-section,
+    .sixth-section,
+    .seventh-section,
+    .ninth-section,
+    .tenth-section {
+        background-color: #222C6B;
+        color: #fff;
+    }
+
+    .second-section {
+        background-color: #F5F5F5;
+        color: #222C6B;
+    }
+
+    .eighth-section {
+        background-color: #F5F5F5;
+        color: #000;
+    }
+
+    .split {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        /* overflow-x: hidden; */
+        padding-top: 20px;
+    }
+
+    .left-1 {
+        left: 0;
+    }
+
+    .right-1 {
+        right: 0;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .space-10 {
+        display: block;
+        width: 10px;
+        min-width: 10px;
+        height: 10px;
+        min-height: 10px;
+    }
+
+    .space-30 {
+        display: block;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        min-height: 30px;
+    }
+
+    .space-50 {
+        display: block;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        min-height: 50px;
+    }
+
+    .space-80 {
+        display: block;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        min-height: 80px;
+    }
+
+    .space-100 {
+        display: block;
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+    }
+
+    .space-200 {
+        display: block;
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+    }
+
+    .vertical-space {
+        display: block;
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        min-height: 70px;
+    }
+
+    .padding-container {
+        padding: 100px 12%;
+    }
+
+    .side-padding-container {
+        padding: 0 12%;
+    }
+
+
     @media only screen and (max-width: 991px) {
         .app-nav ul {
             display: none;
@@ -159,7 +275,7 @@
         if (window.scrollY <= 10) {
             header.className = 'app-header'
         }
-        
+
         if (window.scrollY >= 150) {
             header.className = 'app-header hidden'
         }
@@ -177,7 +293,7 @@
     function handleClick() {
         const elem = document.getElementById('app-nav-mb');
         const logo = document.getElementById('logo');
-        
+
         if (!isOpen) {
             elem.style.transform = 'translateY(0px)'
             logo.style.display = 'none';
@@ -260,7 +376,7 @@
         </div>
     </header>
 
-    
+
 
     <!-- *************************************** First Section *************************************** -->
     <section class="first-section" style="padding-top: 200px; background-image: url(images/s-1/left_main_bg.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
@@ -305,19 +421,19 @@
                 <div class="space-50"></div>
                 <article style="font-size: 20px; color: #C6CAEE; padding: 0 12%;">
                     <p style="padding-bottom: 30px;">
-                        We are an online business combining two industries together for your daily convenience. With our companies forward-thinking with innovation, inspiration, 
-                        and teamwork we provide competitive products and services with our GPoint Market for your everyday needs accessible to you worldwide. 
-                        We are also proud to be part of a booming industry in the digital world of cryptocurrency. We have successfully aligned ourselves with our OWN token (IMC) 
-                        and Blockchain Exchange to maximize the opportunities for our members and increase visibility in this competitive digital space. 
+                        We are an online business combining two industries together for your daily convenience. With our companies forward-thinking with innovation, inspiration,
+                        and teamwork we provide competitive products and services with our GPoint Market for your everyday needs accessible to you worldwide.
+                        We are also proud to be part of a booming industry in the digital world of cryptocurrency. We have successfully aligned ourselves with our OWN token (IMC)
+                        and Blockchain Exchange to maximize the opportunities for our members and increase visibility in this competitive digital space.
                         Finally, we offer the WCL Travel Club a trillion-dollar industry taking advantage of major discounts to destinations worldwide and much more.
 
                     </p>
                     <p style="padding-bottom: 30px;">
-                        In addition, we offer a once-in-a-lifetime opportunity for those who are goal seekers to be part of our World Crypto Life community movement to benefit 
+                        In addition, we offer a once-in-a-lifetime opportunity for those who are goal seekers to be part of our World Crypto Life community movement to benefit
                         from our business compensation model that rewards you handsomely daily, weekly, and monthly based on you sharing our company’s business goals worldwide.
                     </p>
                     <p style="padding-bottom: 30px;">
-                        Our mission is to provide a solution for the everyday person who is looking to better their lives financially and create a lifestyle of time 
+                        Our mission is to provide a solution for the everyday person who is looking to better their lives financially and create a lifestyle of time
                         and freedom with their family and friends. Here at WCL we offer and preserve a culture of helping others meet their dreams!
                     </p>
                     <p style="color: #fff;">
@@ -431,8 +547,8 @@
             <div class="space-30"></div>
             <article style="width: 80%; margin: 0;">
                 <p style="font-size: 20px; color: #C6CAEE;">
-                    With the benefits from the community, such as, reward mileages, affiliated local shops, swapping with GPoints and much more to be introduced, 
-                    the IMC friendly population will be expanded rapidly. <br /> 
+                    With the benefits from the community, such as, reward mileages, affiliated local shops, swapping with GPoints and much more to be introduced,
+                    the IMC friendly population will be expanded rapidly. <br />
                     IMC will satisfy common users, both seller & buyer, who are reluctant to use Crypto-currency in the everyday life, such as, shopping, traveling and so on.
                 </p>
             </article>
@@ -491,7 +607,7 @@
             </div>
         </section>
     </section>
-    
+
     <!-- *************************************** Fourth and Fifth Section *************************************** -->
     <section class="fourth-and-fifth-section side-padding-container" style="display: flex; flex-direction: column; background-image: url(images/s-1/left_main_bg_flipped.png); background-position: 50% 0; background-size: cover; background-repeat: no-repeat; background-blend-mode: hard-light;">
         <section style="display: flex; flex-wrap: wrap;">
@@ -511,7 +627,7 @@
                 <div class="space-10"></div>
                 <article style="width: 80%; margin: 0;">
                     <p style="font-size: 20px; color: #C6CAEE;">
-                        Our most prominent milestone has been the establishment of a global method which accessible all around the world for users by having a major wallet account. 
+                        Our most prominent milestone has been the establishment of a global method which accessible all around the world for users by having a major wallet account.
                         GPoints are synced with global exchange wallet which can be used for all the transactions and withdraw USD to GPoint Prepaid VISA Card, powered by NetSpend.
                     </p>
                 </article>
@@ -566,7 +682,7 @@
                                     <img src="images/s-5/mobile.png" alt="Mobile icon" style="width: 70px; height: 70px;" />
                                     <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">Mobile App</p>
                                 </div>
-                            
+
                             </div>
                             <div style="padding: 10px; display: flex; align-content: center;">
                                 <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
@@ -639,7 +755,7 @@
                             Shop at GPoint Market / Affiliates
                         </p>
                     </div>
-                    <!-- <div class="space-100"></div> -->
+                    <div class="space-100"></div>
 
                 </div>
             </article>
@@ -660,7 +776,7 @@
                 </div>
                 <article style="margin-left: 0; width: 80%;">
                     <p style="color: #C6CAEE;">
-                        FINL is designed to enable digital trust-guaranteed transactions using high-frequency transactions 
+                        FINL is designed to enable digital trust-guaranteed transactions using high-frequency transactions
                         and smart contracts based on Delegated Proof of Reputation (DPoR).
                     </p>
                     <div class="space-200"></div>
@@ -775,7 +891,7 @@
                     <div style="padding: 10px; display: flex; align-content: center;">
                         <div style="margin: 10px; display: flex; justify-content: center;">
                             <img src="images/s-9/speed_cost.png" alt="Speed and Cost icon" style="width: 70px; height: 70px; margin: 0;" />
-                            <div style="text-align: start;">    
+                            <div style="text-align: start;">
                                 <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
                                     High Speed And Low Costs
                                 </h3>
@@ -788,7 +904,7 @@
                     <div style="padding: 10px; display: flex; align-content: center;">
                         <div style="margin: 10px; display: flex; justify-content: center;">
                             <img src="images/s-9/no_more.png" alt="No Middle men icon" style="width: 70px; height: 70px; margin: 0;" />
-                            <div style="text-align: start;">    
+                            <div style="text-align: start;">
                                 <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
                                     No More Middle Men
                                 </h3>
@@ -871,7 +987,7 @@
                                     Real-Time Database
                                 </h3>
                                 <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
-                                    Our database systems use real-time processing to deliver inbound and outbound account activity. 
+                                    Our database systems use real-time processing to deliver inbound and outbound account activity.
                                 </p>
                             </div>
                         </div>
@@ -895,9 +1011,9 @@
                     <div class="space-10"></div>
                     <div style="color: #C6CAEE; width: 80%; margin: 0; text-align: start;">
                         <p>
-                            Create a tradeable digital token that can be used as a currency, a representation of an asset, a virtual share, 
-                            a proof of membership or anything at all. These tokens use a standard coin API so your contract will be automatically compatible with any wallet, 
-                            other contract or exchange also using this standard. The total amount of tokens in circulation can be set to a simple fixed amount or 
+                            Create a tradeable digital token that can be used as a currency, a representation of an asset, a virtual share,
+                            a proof of membership or anything at all. These tokens use a standard coin API so your contract will be automatically compatible with any wallet,
+                            other contract or exchange also using this standard. The total amount of tokens in circulation can be set to a simple fixed amount or
                             fluctuate based on any programmed ruleset.
                         </p>
                         <div class="space-30"></div>
@@ -944,9 +1060,9 @@
                     <div class="space-10"></div>
                     <div style="color: #C6CAEE; width: 80%; text-align: start;">
                         <p>
-                            Using a blockchain is cryptographically secure – the ledger is distributed across all nodes in the system making hacking near impossible. 
-                            All of the solidity Ethereum smart contract code used for the token sale and vault account was fully audited by SmartDec, 
-                            a firm specialized in Smart Contract Security Audit. No single authority has control, the network cannot be distorded or 
+                            Using a blockchain is cryptographically secure – the ledger is distributed across all nodes in the system making hacking near impossible.
+                            All of the solidity Ethereum smart contract code used for the token sale and vault account was fully audited by SmartDec,
+                            a firm specialized in Smart Contract Security Audit. No single authority has control, the network cannot be distorded or
                             manipulated by a single controlling authority. No middleman.
                         </p>
                         <div class="space-30"></div>
@@ -985,7 +1101,7 @@
 
     </section>
 
-    <div class="space-200"></div>
+    <!-- <div class="space-200"></div> -->
 
 </body>
 </html>
