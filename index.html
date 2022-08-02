@@ -56,7 +56,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 82%;
         color: #000;
         padding: 20px;
         background: transparent;
@@ -200,11 +200,181 @@
         padding: 0 12%;
     }
 
-    .sec-2-icon-h3 {
-        margin: 10px;
-        text-transform: uppercase;
-        color: #000;
+    /****************************** Section 1 ******************************/
+
+    .first-section {
+        padding-top: 200px; 
+        background-image: url(images/bg/FInL\ BG_1.jpg); 
+        background-position: 50% 0; 
+        background-size: cover; 
+        background-repeat: no-repeat;
     }
+
+    .s-1-div-h1 {
+        text-transform: uppercase; 
+        font-size: 46px; 
+        padding-bottom: 20px; 
+        font-weight: 700; 
+        background: -webkit-linear-gradient(45deg, #8E734D, #E4C84F); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+    }
+
+    .s-1-div-h3 {
+        font-size: 32px; 
+        font-weight: 500;
+    }
+
+    .s-1-div-h2 {
+        font-size: 40px; 
+        padding-bottom: 10px;
+    }
+
+    .s-1-div-p {
+        font-size: 24px; 
+        width: 80%; 
+        margin: 0;
+    }
+
+    .s-1-art-h1 {
+        font-size: 46px; 
+        color: #fff;
+        width: 50%; 
+        text-align: center; 
+    }
+
+    .s-1-art-art-container {
+        font-size: 20px; 
+        color: #C6CAEE; 
+        padding: 0 12%;
+    }
+
+    .s-1-spl-right-sec {
+        min-width: 450px;
+    }
+
+    .s-1-wcl-main-img {
+        width: 584px; 
+        height: 418px; 
+        position: relative; 
+        bottom: 80px;
+    }
+
+    .s-1-img-bar-left {
+        width: 300px; 
+        height: 6px; 
+        margin-right: 0;
+    }
+
+    .s-1-img-bar-right {
+        width: 300px; 
+        height: 6px; 
+        margin-left: 10px;
+    }
+
+    .s-1-img-play-btn {
+        width: 134px; 
+        height: 134px;
+    }
+
+    .s-1-sec-art-container {
+        padding-top: 30px; 
+        padding-bottom: 50px;
+    }
+
+    /****************************** Section 2 ******************************/
+
+    .s-2-div-h1 {
+        font-size: 40px; 
+        font-weight: 800; 
+        text-transform: uppercase;
+    }
+
+    .s-2-ul {
+        list-style: none;
+    }
+
+    .s-2-ul-li {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 6%; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .s-2-ul-li-div-container {
+        padding: 10px;
+    }
+
+    .s-2-ul-li-each-text {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .s-2-ul-li-each-h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #000;
+        margin: 10px;
+    }
+
+    .s-2-ul-li-each-p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /****************************** Section 3 ******************************/
+
+    .third-section {
+        display: flex; 
+        background-image: url(images/bg/FInL\ BG_2.jpg); 
+        background-position: 50% 0; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .s-3-div-h1 {
+        font-size: 46px;
+    }
+
+    .s-3-div-h3 {
+        color: #FAC850; 
+        font-size: 30px; 
+        font-weight: 400;
+    }
+
+    .s-3-sec {
+        padding-left: 50px;
+    }
+
+    .s-3-first-art-container {
+        width: 80%; 
+        margin: 0;
+    }
+
+    .s-3-first-art-p {
+        font-size: 20px;
+        color: #C6CAEE;
+    }
+
+    .s-3-second-art-h2 {
+        font-size: 30px; 
+        color: #D9D9D9;
+    }
+
+    .s-3-second-art-div-container {
+        display: flex; 
+        flex-direction: column;
+        font-size: 20px; 
+        color: #C6CAEE; 
+    }
+
+    .s-3-second-art-text-container {
+        display: flex; 
+        padding-bottom: 2px; 
+        margin: 0;
+    }
+
 
     /****************************** Button ******************************/
 
@@ -235,6 +405,7 @@
         color: #000;
         transition: all 0.7s ease-in-out;
     }
+
 
     /****************************** Space ******************************/
 
@@ -316,6 +487,181 @@
         }
     }
 
+    @media only screen and (max-width: 600px) {
+        .mw-600-space-10 {
+            width: 10px;
+            min-width: 10px;
+            height: 10px;
+            min-height: 10px;
+        }
+
+        .mw-600-space-30 {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            min-height: 30px;
+        }
+
+        .split {
+            padding-top: 0;
+        }
+
+        .wcl-logo {
+            width: 200px;
+        }
+
+        .first-section {
+            padding-top: 100px;
+        }
+
+        .s-1-img-bar-left,
+        .s-1-img-bar-right {
+            width: 100px;
+            height: 6px;
+        }
+
+        .s-1-img-play-btn {
+            width: 100px;
+            height: 100px;
+            margin-right: 5px;
+        }
+
+        .s-1-div-h1 {
+            text-transform: uppercase; 
+            text-align: center;
+            font-size: 30px; 
+            padding-bottom: 20px; 
+            font-weight: 700; 
+            background: -webkit-linear-gradient(45deg, #8E734D, #E4C84F); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+
+        .s-1-h3h2-container {
+            text-align: center;
+        }
+
+        .s-1-div-h3 {
+            font-size: 18px;
+            text-align: start;
+            margin-left: 20px;
+        }
+
+        .s-1-div-h2 {
+            font-size: 22px;
+        }
+
+        .s-1-div-p {
+            font-size: 16px;
+            width: 100%;
+            text-align: start;
+        }
+
+        .s-1-art-h1 {
+            font-size: 30px;
+        }
+
+        .s-1-art-art-container {
+            font-size: 16px;
+        }
+
+        .s-1-spl-right-sec {
+            min-width: 250px;
+        }
+
+        .s-1-wcl-main-img {
+            width: 300px; 
+            height: 200px; 
+            position: relative; 
+            top: 40px;
+            right: 30px;
+            margin-bottom: 30px;
+        }
+
+        .s-1-sec-art-container {
+            padding-bottom: 0;
+        }
+
+
+        .s-2-div-h1 {
+            font-size: 30px;
+        }
+
+        .s-2-ul {
+            position: relative;
+            right: 20px;
+        }
+
+        .s-2-ul-li {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 6%; 
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+
+        .s-2-ul-li-div-container {
+            padding: 0;
+        }
+
+        .s-2-ul-li-each-text {
+            width: 100%;
+            margin: 0;
+        }
+
+        .s-2-ul-li-each-p {
+            text-align: center;
+        }
+
+
+        .third-section.padding-container {
+            padding: 50px 12%;
+        }
+
+        .s-3-div-h1 {
+            font-size: 30px;
+        }
+
+        .s-3-div-h3 {
+            color: #FAC850; 
+            font-size: 20px; 
+            font-weight: 400;
+        }
+
+        .split.s-3-sec.split-ccl {
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .s-3-first-art-container {
+            width: 100%;
+            text-align: start;
+        }
+
+        .s-3-first-art-p {
+            font-size: 16px;
+        }
+
+        .s-3-second-art-h2 {
+            font-size: 20px;
+        }
+
+        .s-3-second-art-div-container {
+            font-size: 16px;
+        }
+        
+        .s-3-second-art-text-container {
+            text-align: start;
+        }
+
+        .split.s-3-none {
+            display: none;
+        }
+
+        
+    }
+
 </style>
 
 <script>
@@ -387,7 +733,7 @@
         <div class="header-bg"></div>
         <div class="app-nav">
             <a href="#" style="margin: 0;" id="logo">
-                <img src="images/s-1/wcl_logo.png" alt="wcl logo" style="width: 200px; height: 47px;" />
+                <img src="images/s-1/wcl_logo.png" alt="wcl-logo" class="wcl-logo" />
             </a>
             <ul>
                 <li>
@@ -436,44 +782,44 @@
 
 
     <!-- *************************************** First Section *************************************** -->
-    <section class="first-section" style="padding-top: 200px; background-image: url(images/bg/FInL\ BG_1.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="first-section">
         <section class="padding-container" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
             <section class="split left-1" style="position: relative; top: 40px;">
                 <div>
-                    <h1 style="text-transform: uppercase; font-size: 46px; padding-bottom: 20px; font-weight: 700; background: -webkit-linear-gradient(45deg, #8E734D, #E4C84F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <h1 class="s-1-div-h1">
                         World Crypto Life
                     </h1>
                 </div>
-                <div style="color: #fff;">
-                    <h3 style="font-size: 32px; font-weight: 500;">Let Us</h3>
-                    <h2 style="font-size: 40px; padding-bottom: 10px;">Show You How!</h2>
-                    <p style="font-size: 24px; width: 80%; margin: 0;">
+                <div class="s-1-h3h2-container">
+                    <h3 class="s-1-div-h3">Let Us</h3>
+                    <h2 class="s-1-div-h2">Show You How!</h2>
+                    <p class="s-1-div-p">
                         Everyday convenience backed by an online digital platform accessible worldwide
                     </p>
                 </div>
             </section>
-            <section class="split right-1" style="min-width: 450px;">
-                <div class="centered" style="color: #fff;">
-                    <img src="images/s-1/WCL_main_image.png" alt="wcl_main" class="none" style="width: 584px; height: 418px; position: relative; bottom: 80px;" />
+            <section class="split right-1 s-1-spl-right-sec">
+                <div>
+                    <img src="images/s-1/WCL_main_image.png" alt="wcl_main" class="s-1-wcl-main-img" />
                 </div>
             </section>
         </section>
 
         <section class="side-padding-container">
             <div style="display: flex; align-items: center;">
-                <img src="images/s-1/long-bar.png" alt="bar" style="width: 300px; height: 6px; margin-right: 0;" />
+                <img src="images/s-1/long-bar.png" alt="bar" class="s-1-img-bar-left" />
                 <a href="#" style="margin: 0;">
-                    <img src="images/s-1/wcl_welcom_button.png" alt="Welcome button" style="width: 134px; height: 134px;" />
+                    <img src="images/s-1/wcl_welcom_button.png" alt="Welcome button" class="s-1-img-play-btn" />
                 </a>
-                <img src="images/s-1/long-bar.png" alt="bar" style="width: 300px; height: 6px; margin-left: 10px;" />
+                <img src="images/s-1/long-bar.png" alt="bar" class="s-1-img-bar-right" />
             </div>
         </section>
 
-        <section class="side-padding-container" style="padding-top: 30px; padding-bottom: 50px;">
+        <section class="side-padding-container s-1-sec-art-container">
             <article>
-                <h1 style="width: 50%; text-align: center; font-size: 46px; color: #fff;">Welcome to <span style="color: #E0A832">WCL</span></h1>
-                <div class="space-50"></div>
-                <article style="font-size: 20px; color: #C6CAEE; padding: 0 12%;">
+                <h1 class="s-1-art-h1">Welcome to <span style="color: #E0A832">WCL</span></h1>
+                <div class="space-50 mw-600-space-30"></div>
+                <article class="s-1-art-art-container">
                     <p style="padding-bottom: 30px;">
                         We are an online business combining two industries together for your daily convenience. With our companies forward-thinking with innovation, inspiration,
                         and teamwork we provide competitive products and services with our GPoint Market for your everyday needs accessible to you worldwide.
@@ -542,77 +888,79 @@
 
     <!-- *************************************** Second Section *************************************** -->
     <section class="second-section side-padding-container" style="flex-wrap: wrap;">
-        <div class="space-80"></div>
+        <div class="space-80 mw-600-space-30"></div>
         <div style="text-align: center;">
-            <h1 style="font-size: 40px; font-weight: 800; text-transform: uppercase;">Everyday Use Worldwide</h1>
+            <h1 class="s-2-div-h1">
+                Everyday Use Worldwide
+            </h1>
         </div>
-        <div class="space-50"></div>
+        <div class="space-50 mw-600-space-10"></div>
         <section>
             <article style="text-align: center; margin: 0px auto;">
-                <ul style="list-style: none;">
-                    <li style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6%; flex-wrap: wrap; justify-content: center;">
-                        <div style="padding: 10px;">
+                <ul class="s-2-ul">
+                    <li class="s-2-ul-li">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/anytime.png" alt="anytime" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Anytime</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Anytime</h3>
+                                <p class="s-2-ul-li-each-p">
                                     Integrating the very best of crypto marketing and exchange techniques to deliver a futuristic trading experience.
                                 </p>
                             </div>
                         </div>
-                        <div style="padding: 10px;">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/anywhere.png" alt="anywhere" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Anywhere</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Anywhere</h3>
+                                <p class="s-2-ul-li-each-p">
                                     World Crypto Life came with a Blockchain opportunity to make all those coins useful where you can use anywhere.
                                 </p>
                             </div>
                         </div>
-                        <div style="padding: 10px;">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/local.png" alt="local" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Local</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Local</h3>
+                                <p class="s-2-ul-li-each-p">
                                     We bring you the opportunity to explore the future of digital finance as an early entrant.
                                 </p>
                             </div>
                         </div>
-                        <div style="padding: 10px;">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/online.png" alt="online" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Online</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Online</h3>
+                                <p class="s-2-ul-li-each-p">
                                     Our Blockchain system for exchange helps transfer, sell, purchase and exchange as easy as 1, 2, 3!
                                 </p>
                             </div>
                         </div>
-                        <div style="padding: 10px;">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/offline.png" alt="offline" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Offline</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Offline</h3>
+                                <p class="s-2-ul-li-each-p">
                                     No More Useless Coins has helped us develop an innovative opportunity for cryptocurrency users to use offline as well.
                                 </p>
                             </div>
                         </div>
-                        <div style="padding: 10px;">
+                        <div class="s-2-ul-li-div-container">
                             <div style="margin: 10px;">
                                 <img src="images/s-2/global.png" alt="global" style="width: 69px; height: 69px;" />
                             </div>
-                            <div style="width: 70%; margin: 10px auto;">
-                                <h3 class="sec-2-icon-h3">Global</h3>
-                                <p style="text-align: center;">
+                            <div class="s-2-ul-li-each-text">
+                                <h3 class="s-2-ul-li-each-text">Global</h3>
+                                <p class="s-2-ul-li-each-p">
                                     WCL has the unique system that makes the crypto industry real, attractive and more possible throughout the world.
                                 </p>
                             </div>
@@ -625,60 +973,58 @@
     </section>
 
     <!-- *************************************** Third Section *************************************** -->
-    <section class="third-section padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_2.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <section class="split" style="padding-left: 50px;">
+    <section class="third-section padding-container">
+        <section class="split s-3-sec split-ccl">
             <div>
-                <h1 style="font-size: 46px;">
+                <h1 class="s-3-div-h1">
                     GPoint Market
                 </h1>
             </div>
-            <div style="color: #FAC850;">
-                <h2 style="font-size: 30px; font-weight: 400;">
-                    <span style="margin-right: 10px;">Shop .</span>
-                    <span style="margin-right: 10px;">Earn .</span>
-                    <span style="margin-right: 10px;">Save</span>
-                </h2>
+            <div>
+                <h3 class="s-3-div-h3">
+                    Shop. Earn. Save
+                </h3>
             </div>
             <div class="space-30"></div>
-            <article style="width: 80%; margin: 0;">
-                <p style="font-size: 20px; color: #C6CAEE;">
+            <article class="s-3-first-art-container">
+                <p class="s-3-first-art-p">
                     With the benefits from the community, such as, reward mileages, affiliated local shops, swapping with GPoints and much more to be introduced,
                     the IMC friendly population will be expanded rapidly. <br />
                     IMC will satisfy common users, both seller &amp; buyer, who are reluctant to use Crypto-currency in the everyday life, such as, shopping, traveling and so on.
                 </p>
             </article>
-            <div class="space-50"></div>
+            <div class="space-50 mw-600-space-30"></div>
             <article style="margin: 0;">
-                <h2 style="font-size: 30px; color: #D9D9D9;">
+                <h2 class="s-3-second-art-h2">
                     With G-Point Market, you will enjoy
                 </h2>
                 <div class="space-10"></div>
-                <div style="font-size: 20px; color: #C6CAEE; display: flex; flex-direction: column;">
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                <div class="s-3-second-art-div-container">
+                    <div class="s-3-second-art-text-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             The Best of the best 30 products available ONLY in <br /> GPoint Market!!!
                         </p>
                     </div>
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                    <div class="s-3-second-art-text-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             Up to 50% discount for more than 300 Brand Products!!!
                         </p>
                     </div>
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                    <div class="s-3-second-art-text-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             Selected Local Businesses affiliated with GPoint Mall!!!
                         </p>
                     </div>
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                    <div class="s-3-second-art-text-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             More convenient G-Point Gift Certificates!!!
                         </p>
                     </div>
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                    <div class="s-3-second-art-text-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             Whole Variety of Gift Certificate &amp; Cards can be <br /> purchased with GPoints!!!
@@ -694,17 +1040,18 @@
                 </form>
             </div>
         </section>
-        <section class="split" style="padding-right: 50px; min-width: 450px;">
+
+        <section class="split s-3-none" style="padding-right: 50px; min-width: 450px;">
             <div class="space-200"></div>
             <div class="space-200"></div>
             <div class="centered" style="float: left; overflow: hidden;">
-                <img src="images/s-3/market.png" alt="GPoint Market" class="none" style="width: 687px; height: 471px; position: relative; right: 35px; bottom: 25px; overflow-y: scroll;" />
+                <img src="images/s-3/market.png" alt="GPoint Market" style="width: 687px; height: 471px; position: relative; right: 35px; bottom: 25px; overflow-y: scroll;" />
             </div>
         </section>
     </section>
 
     <!-- *************************************** Fourth and Fifth Section *************************************** -->
-    <section class="fourth-and-fifth-section side-padding-container" style="display: flex; flex-direction: column; background-image: url(images/bg/FInL\ BG_3.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <!-- <section class="fourth-and-fifth-section side-padding-container" style="display: flex; flex-direction: column; background-image: url(images/bg/FInL\ BG_3.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
         <section style="display: flex; flex-wrap: wrap;">
             <section class="split" style="padding-right: 50px; min-width: 450px;">
                 <div class="centered" style="overflow: hidden;">
@@ -796,11 +1143,11 @@
                 </div>
             </section>
         </section>
-    </section>
+    </section> -->
 
 
     <!-- *************************************** Sixth Section *************************************** -->
-    <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_4.jpg); background-position: 50% 0; background-size: contain; background-repeat: no-repeat;">
+    <!-- <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_4.jpg); background-position: 50% 0; background-size: contain; background-repeat: no-repeat;">
         <section style="margin-left: 100px;">
             <div class="space-100"></div>
             <div>
@@ -857,10 +1204,10 @@
                 </div>
             </article>
         </section>
-    </section>
+    </section> -->
 
     <!-- *************************************** Seventh Section *************************************** -->
-    <section class="seventh-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_5.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <!-- <section class="seventh-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_5.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
         <section class="split" style="display: flex;">
             <div>
                 <div style="text-transform: uppercase; margin-bottom: 30px;">
@@ -901,10 +1248,10 @@
                 </div>
             </div>
         </section>
-    </section>
+    </section> -->
 
     <!-- *************************************** Eighth Section *************************************** -->
-    <section class="eighth-section side-padding-container">
+    <!-- <section class="eighth-section side-padding-container">
         <section style="padding: 0 12%;">
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6%; flex-wrap: wrap; justify-content: center; position: relative; bottom: 60px;">
                 <div style="display: flex; flex-direction: column; text-align: center;">
@@ -970,10 +1317,10 @@
             </div>
         </section>
         <div class="space-10"></div>
-    </section>
+    </section> -->
 
     <!-- *************************************** Ninth Section *************************************** -->
-    <section class="ninth-section side-padding-container" style="background-image: url(images/bg/FInL\ BG_6.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <!-- <section class="ninth-section side-padding-container" style="background-image: url(images/bg/FInL\ BG_6.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
         <div class="space-100"></div>
         <article class="split" style="display: flex; flex-direction: column; padding-top: 0; margin: 0;">
             <h2 style="margin-left: 50px;">
@@ -1094,10 +1441,10 @@
             <div class="space-200"></div>
         </section>
         <div class="space-200"></div>
-    </section>
+    </section> -->
 
     <!-- *************************************** Tenth Section *************************************** -->
-    <section class="tenth-section padding-container" style="background-image: url(images/bg/FInL\ BG_7.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <!-- <section class="tenth-section padding-container" style="background-image: url(images/bg/FInL\ BG_7.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
         <section style="display: flex;">
             <div class="split" style="display: flex;">
                 <div class="space-200"></div>
@@ -1196,7 +1543,7 @@
             </div>
         </section>
 
-    </section>
+    </section> -->
 
     <!-- <div class="space-200"></div> -->
 
