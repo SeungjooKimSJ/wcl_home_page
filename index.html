@@ -375,6 +375,44 @@
         margin: 0;
     }
 
+    /****************************** Section 4 & 5 ******************************/
+
+    .fourth-and-fifth-section {
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column; 
+        background-image: url(images/bg/FInL\ BG_3.jpg); 
+        background-position: 50% 0; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .s-4-div-h1 {
+        font-size: 46px;
+    }
+
+    .s-4-first-art-container {
+            width: 80%;
+            margin: 0;
+        }
+
+    .s-4-first-art-p {
+        font-size: 20px;
+        color: #C6CAEE;
+    }
+
+    .s-4-second-art-container {
+        width: 80%; 
+        margin: 0; 
+        color: #C6CAEE;
+    }
+
+    .s-4-second-art-div-container {
+        display: flex; 
+        padding-bottom: 2px; 
+        margin: 0;
+    }
+
 
     /****************************** Button ******************************/
 
@@ -657,6 +695,34 @@
 
         .split.s-3-none {
             display: none;
+        }
+
+
+        .split.s-4-none {
+            display: none;
+        }
+
+        .split.s-4-sec.split-ccl {
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .s-4-div-h1 {
+            font-size: 30px;
+        }
+
+        .s-4-first-art-container {
+            width: 100%;
+            text-align: start;
+        }
+
+        .s-4-first-art-p {
+            font-size: 16px;
+        }
+
+        .s-4-second-art-container {
+            text-align: start;
         }
 
         
@@ -1051,37 +1117,37 @@
     </section>
 
     <!-- *************************************** Fourth and Fifth Section *************************************** -->
-    <!-- <section class="fourth-and-fifth-section side-padding-container" style="display: flex; flex-direction: column; background-image: url(images/bg/FInL\ BG_3.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
-        <section style="display: flex; flex-wrap: wrap;">
-            <section class="split" style="padding-right: 50px; min-width: 450px;">
+    <section class="fourth-and-fifth-section side-padding-container">
+        <div style="display: flex; flex-wrap: wrap;">
+            <section class="split s-4-none" style="padding-right: 50px; min-width: 450px;">
                 <div class="centered" style="overflow: hidden;">
                     <img src="images/s-4/wallet.png" alt="GPoint Wallet" class="none" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
                 </div>
             </section>
 
-            <section class="split" style="min-width: 450px;">
+            <section class="split s-4-sec split-ccl" style="min-width: 450px;">
                 <div class="space-30"></div>
                 <div>
-                    <h1 style="font-size: 46px;">
+                    <h1 class="s-4-div-h1">
                         GPoint Wallet
                     </h1>
                 </div>
                 <div class="space-10"></div>
-                <article style="width: 80%; margin: 0;">
-                    <p style="font-size: 20px; color: #C6CAEE;">
+                <article class="s-4-first-art-container">
+                    <p class="s-4-first-art-p">
                         Our most prominent milestone has been the establishment of a global method which accessible all around the world for users by having a major wallet account.
                         GPoints are synced with global exchange wallet which can be used for all the transactions and withdraw USD to GPoint Prepaid VISA Card, powered by NetSpend.
                     </p>
                 </article>
-                <div class="space-30"></div>
-                <article style="width: 80%; margin: 0; color: #C6CAEE;">
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                <div class="space-30 mw-600-space-10"></div>
+                <article class="s-4-second-art-container">
+                    <div class="s-4-second-art-div-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             Benefits from the community, such as reward, mileages, affiliated local shops, swapping with G Points
                         </p>
                     </div>
-                    <div style="display: flex; padding-bottom: 2px; margin: 0;">
+                    <div class="s-4-second-art-div-container">
                         <span style="margin: 0 10px 0 0;">&#8226;</span>
                         <p style="margin: 0;">
                             GPoint Wallet provides financial freedom in global everyday usage.
@@ -1096,9 +1162,9 @@
                     </form>
                 </div>
             </section>
-        </section>
+        </div>
 
-        <section style="display: flex; flex-wrap: wrap;">
+        <!-- <section style="display: flex; flex-wrap: wrap;">
             <section class="split" style="margin: 0;">
                 <div style="font-size: 46px; text-align: center;">
                     <h1>GPoint Ecosystem</h1>
@@ -1142,8 +1208,8 @@
                     <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" class="none" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
                 </div>
             </section>
-        </section>
-    </section> -->
+        </section> -->
+    </section>
 
 
     <!-- *************************************** Sixth Section *************************************** -->
