@@ -111,6 +111,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        min-height: 250px;
         transform: translateY(-600px);
         z-index: 8000;
         background-color: transparent;
@@ -118,13 +119,21 @@
     }
 
     #app-nav-mb-ul {
-        list-style: none;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
+        background-color: #000;
+        min-height: 250px;
+        list-style: none;
+        padding-left: 0;
     }
 
     #app-nav-mb-ul li {
-        padding: 3px;
+        padding: 5px;
+    }
+
+    #app-nav-mb-ul li:last-child {
+        margin-bottom: 20px;
     }
 
     #burger {
@@ -139,8 +148,6 @@
     i.fa-bars {
         cursor: pointer;
         font-size: 24px;
-        padding-right: 32px;
-        padding-bottom: 27px;
         transition: all 0.7s ease-in-out;
     }
 
@@ -861,6 +868,24 @@
         .header-bg.op {
             display: none;
         }
+
+        /* #app-nav-mb {
+            min-height: 250px;
+        }
+
+        #app-nav-mb-ul {
+            justify-content: flex-end;
+            background-color: #000;
+            min-height: 250px;
+        }
+
+        #app-nav-mb-ul li {
+            padding: 5px;
+        }
+
+        #app-nav-mb-ul li:last-child {
+            margin-bottom: 20px;
+        } */
     }
 
     @media only screen and (max-width: 915px) {
@@ -898,6 +923,7 @@
             min-height: 60px;
         }
 
+
         .split {
             padding-top: 0;
         }
@@ -905,6 +931,7 @@
         .wcl-logo {
             width: 200px;
         }
+
 
         .first-section {
             padding-top: 100px;
