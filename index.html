@@ -513,6 +513,10 @@
         background-size: cover; 
         background-repeat: no-repeat;
     }
+    
+    .s-7-sec {
+        display: flex;
+    }
 
     .s-7-div-div {
         text-transform: uppercase; 
@@ -565,9 +569,14 @@
 
     .s-7-img-container {
         position: relative; 
-        top: 170px; 
+        top: 150px; 
         right: 80px; 
         min-width: 300px;
+    }
+
+    .s-7-img {
+        width: 316px;
+        height: 379px;  
     }
 
 
@@ -933,10 +942,18 @@
         }
 
 
+        .s-7-sec {
+            flex-wrap: wrap;
+        }
+
         .split.s-7-sec.split-ccl {
+            text-align: center;
             padding-left: 0;
             width: 100%;
-            text-align: center;
+        }
+
+        .s-7-s-div-container {
+            text-align: start;
         }
 
         .s-7-div-div {
@@ -980,7 +997,7 @@
         .s-7-img-container {
             position: relative; 
             top: 0; 
-            left: 50px;
+            left: 0;
             width: 50%;
             padding: 10px 0;
         }
@@ -1541,9 +1558,9 @@
 
     <!-- *************************************** Seventh Section *************************************** -->
     <section class="seventh-section side-padding-container">
-        <section class="split.s-7-sec.split-ccl">
+        <section class="split s-7-sec split-ccl">
             <div class="mw-600-space-30"></div>
-            <div style="display: flex; flex-wrap: wrap;">
+            <div class="s-7-s-div-container">
                 <div class="s-7-div-div">
                     <h1 class="s-7-div-h1">
                         Revolution
