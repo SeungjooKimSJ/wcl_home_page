@@ -580,6 +580,100 @@
     }
 
 
+    /****************************** Section 8 ******************************/
+
+    .s-8-s-div-container {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 6%; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        position: relative; 
+        bottom: 60px;
+    }
+
+    .s-8-div-each-div-container {
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .s-8-art-div-container {
+        margin-top: 30px;
+    }
+
+    .s-8-art-h3 {
+        text-transform: uppercase; 
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .s-8-a-img {
+        width: 298; 
+        height: 184px;
+    }
+
+
+    /****************************** Section 9 ******************************/
+    
+    .ninth-section {
+        display: flex;
+        flex-direction: column;
+        background-image: url(images/bg/FInL\ BG_6.jpg); 
+        background-position: 50% 0; 
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .s-9-s-ul {
+        list-style: none;
+    }
+
+    .s-9-s-ul-li {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 6%; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .s-9-li-div-container {
+        display: flex; 
+        align-content: center;
+        padding: 10px; 
+    }
+
+    .s-9-li-div-div {
+        display: flex; 
+        justify-content: center;
+        margin: 10px; 
+    }
+
+    .s-9-li-div-img {
+        width: 70px; 
+        height: 70px; 
+        margin: 0;
+    }
+
+    .s-9-div-h3 {
+        text-transform: uppercase; 
+        font-size: 18px;
+        color: #C6CAEE; 
+        margin: 0 20px; 
+        margin-bottom: 10px;
+    }
+
+    .s-9-div-p {
+        text-align: start;
+        font-size: 20px; 
+        margin: 0 20px; 
+    }
+
+    .s-9-art-h2 {
+        margin-left: 50px;
+    }
+
+
 
     /****************************** Button ******************************/
 
@@ -705,6 +799,13 @@
             min-width: 30px;
             height: 30px;
             min-height: 30px;
+        }
+
+        .mw-600-space-50 {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            min-height: 50px;
         }
 
         .split {
@@ -1007,6 +1108,51 @@
             height: 279px;
         }
 
+
+        .s-8-s-div-container {
+            display: flex;
+            bottom: 0;
+        }
+
+        .s-8-div-each-div-container {
+            margin-bottom: 20px;
+        }
+
+        .s-8-art-div-container {
+            margin-top: 20px;
+        }
+
+
+        .s-9-s-ul {
+            padding-left: 0;
+        }
+
+        .s-9-s-ul-li {
+            display: flex;
+        }
+
+        .s-9-li-div-container {
+            padding: 10px; 
+        }
+
+        .s-9-li-div-div {
+            margin: 0; 
+        }
+
+        .s-9-li-div-img {
+            width: 50px; 
+            height: 50px;
+        }
+
+        .s-9-div-p {
+            font-size: 16px; 
+            margin: 0 0 0 20px;
+        }
+
+        .s-9-art-h2 {
+            margin-left: 20px;
+        }
+
         
     }
 
@@ -1234,6 +1380,7 @@
         <div class="space-50"></div>
     </section> -->
 
+
     <!-- *************************************** Second Section *************************************** -->
     <section class="second-section side-padding-container" style="flex-wrap: wrap;">
         <div class="space-80 mw-600-space-30"></div>
@@ -1321,6 +1468,7 @@
         <div class="space-200"></div>
     </section>
 
+
     <!-- *************************************** Third Section *************************************** -->
     <section class="third-section padding-container">
         <section class="split s-3-sec split-ccl">
@@ -1398,6 +1546,7 @@
             </div>
         </section>
     </section>
+
 
     <!-- *************************************** Fourth and Fifth Section *************************************** -->
     <section class="fourth-and-fifth-section side-padding-container">
@@ -1556,6 +1705,7 @@
         </section>
     </section>
 
+
     <!-- *************************************** Seventh Section *************************************** -->
     <section class="seventh-section side-padding-container">
         <section class="split s-7-sec split-ccl">
@@ -1598,27 +1748,30 @@
                 <div class="s-7-img-container">
                     <img src="images/s-7/finl_live.png" alt="FINL Live" class="s-7-img" />
                 </div>
+                <div class="mw-600-space-30"></div>
             </section>
         </section>
     </section>
 
+
     <!-- *************************************** Eighth Section *************************************** -->
-    <!-- <section class="eighth-section side-padding-container">
+    <section class="eighth-section side-padding-container">
         <section style="padding: 0 12%;">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6%; flex-wrap: wrap; justify-content: center; position: relative; bottom: 60px;">
-                <div style="display: flex; flex-direction: column; text-align: center;">
+            <div class="mw-600-space-50"></div>
+            <div class="s-8-s-div-container">
+                <div class="s-8-div-each-div-container">
                     <a href="#" style="text-decoration: none;">
-                        <img src="images/s-8/placeholder.png" alt="placeholder" style="width: 298; height: 184px;" />
+                        <img src="images/s-8/placeholder.png" alt="placeholder" class="s-8-a-img" />
                         <p style="position: relative; bottom: 105px; color: #FF00F5;">Link to the video</p>
                     </a>
                     <article>
-                        <h3 style="text-transform: uppercase; font-weight: 600;">Decentralised System</h3>
+                        <h3 class="s-8-art-h3">Decentralised System</h3>
                         <div class="space-10"></div>
                         <p style="width: 80%; text-align: start; height: 100px;">
                             A technical failure can paralyze all affiliate networks on a centralized platform, until the cause is detected and rectified the system.
                         </p>
                     </article>
-                    <div style="margin-top: 30px;">
+                    <div class="s-8-art-div-container">
                         <form>
                             <button class="btn-b">
                                 Learn More
@@ -1626,19 +1779,19 @@
                         </form>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column; text-align: center;">
+                <div class="s-8-div-each-div-container">
                     <a href="#" style="text-decoration: none;">
-                        <img src="images/s-8/placeholder.png" alt="placeholder" style="width: 298; height: 184px;" />
+                        <img src="images/s-8/placeholder.png" alt="placeholder" class="s-8-a-img" style="width: 298; height: 184px;" />
                         <p style="position: relative; bottom: 105px; color: #FF00F5;">Link to the video</p>
                     </a>
                     <article>
-                        <h3 style="text-transform: uppercase; font-weight: 600;">Banks Payment Systems</h3>
+                        <h3 class="s-8-art-h3">Banks Payment Systems</h3>
                         <div class="space-10"></div>
                         <p style="width: 80%; text-align: start; height: 100px;">
                             Up to 45% of a merchant’s budget is spent on commissions charged by a ntumber of brokers, including banks, payment systems.
                         </p>
                     </article>
-                    <div style="margin-top: 30px;">
+                    <div class="s-8-art-div-container">
                         <form>
                             <button class="btn-b">
                                 Learn More
@@ -1646,19 +1799,19 @@
                         </form>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column; text-align: center;">
+                <div class="s-8-div-each-div-container">
                     <a href="#" style="text-decoration: none;">
-                        <img src="images/s-8/placeholder.png" alt="placeholder" style="width: 298; height: 184px;" />
+                        <img src="images/s-8/placeholder.png" alt="placeholder" class="s-8-a-img" style="width: 298; height: 184px;" />
                         <p style="position: relative; bottom: 105px; color: #FF00F5;">Link to the video</p>
                     </a>
                     <article>
-                        <h3 style="text-transform: uppercase; font-weight: 600;">CPA Networks</h3>
+                        <h3 class="s-8-art-h3">CPA Networks</h3>
                         <div class="space-10"></div>
                         <p style="width: 80%; text-align: start; height: 100px;">
                             Affiliate networtks have to pay for using existing platforms on a monthly basis or spend money on developing proprietary platforms.
                         </p>
                     </article>
-                    <div style="margin-top: 30px;">
+                    <div class="s-8-art-div-container">
                         <form>
                             <button class="btn-b">
                                 Learn More
@@ -1668,121 +1821,122 @@
                 </div>
             </div>
         </section>
-        <div class="space-10"></div>
-    </section> -->
+        <div class="space-10 mw-600-space-30"></div>
+    </section>
+
 
     <!-- *************************************** Ninth Section *************************************** -->
-    <!-- <section class="ninth-section side-padding-container" style="background-image: url(images/bg/FInL\ BG_6.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
+    <section class="ninth-section side-padding-container">
         <div class="space-100"></div>
         <article class="split" style="display: flex; flex-direction: column; padding-top: 0; margin: 0;">
-            <h2 style="margin-left: 50px;">
+            <h2 class="s-9-art-h2">
                 Key Features
                 <img src="images/s-9/line.png" alt="line" style="height: 20%; position: relative; bottom: 5px; left: 50px;" />
             </h2>
         </article>
-        <div class="space-30"></div>
+        <div class="space-30 mw-600-space-10"></div>
         <section style="text-align: center; margin: 0px auto;">
-            <ul style="list-style: none;">
-                <li style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6%; flex-wrap: wrap; justify-content: center;">
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-9/speed_cost.png" alt="Speed and Cost icon" style="width: 70px; height: 70px; margin: 0;" />
+            <ul class="s-9-s-ul">
+                <li class="s-9-s-ul-li">
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/speed_cost.png" alt="Speed and Cost icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     High Speed And Low Costs
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Easily accessible technological advancements at the forefront of every one of our solutions.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-9/no_more.png" alt="No Middle men icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/no_more.png" alt="No Middle men icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     No More Middle Men
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Immediate funding without third-parties. Smart contracts autonomously perform funding – collect and release payments.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-9/fair_deal.png" alt="Fair Deals icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/fair_deal.png" alt="Fair Deals icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Fair Deals Only
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Full traparency is at the core of each and every partnership.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-9/easy_fair.png" alt="Easy and Fair icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/easy_fair.png" alt="Easy and Fair icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Easy Entry And Fair Competition
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Open-source smart contracts ensure fair and transparent partnerships with merchants and members.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-5/partners.png" alt="Partners icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/protection.png" alt="Partners icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Protection From Hacking
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     On a decentralized platform, all user accounts are independent; if one account is hacked, this won’t breach the security of.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-5/partners.png" alt="Partners icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/p2p_trade.png" alt="Partners icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Global P2P Trade Financing
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Integrate purchasing and accounts payable systems to create greater efficiencies.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-5/mobile.png" alt="Mobile icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/cost_effective.png" alt="Mobile icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Cost Effective
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Scale economy through decentralization leading to significant decrease in transaction fees.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; align-content: center;">
-                        <div style="margin: 10px; display: flex; justify-content: center;">
-                            <img src="images/s-5/worldmarket.png" alt="World Market icon" style="width: 70px; height: 70px; margin: 0;" />
+                    <div class="s-9-li-div-container">
+                        <div class="s-9-li-div-div">
+                            <img src="images/s-9/database.png" alt="World Market icon" class="s-9-li-div-img" />
                             <div style="text-align: start;">
-                                <h3 style="text-transform: uppercase; color: #C6CAEE; margin: 0 20px; margin-bottom: 10px;">
+                                <h3 class="s-9-div-h3">
                                     Real-Time Database
                                 </h3>
-                                <p style="font-size: 20px; margin: 0 20px; text-align: start; height: 100px">
+                                <p class="s-9-div-p">
                                     Our database systems use real-time processing to deliver inbound and outbound account activity.
                                 </p>
                             </div>
@@ -1793,7 +1947,7 @@
             <div class="space-200"></div>
         </section>
         <div class="space-200"></div>
-    </section> -->
+    </section>
 
     <!-- *************************************** Tenth Section *************************************** -->
     <!-- <section class="tenth-section padding-container" style="background-image: url(images/bg/FInL\ BG_7.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
