@@ -387,6 +387,11 @@
         background-repeat: no-repeat;
     }
 
+    .s-4-first-s-container {
+        padding-right: 50px; 
+        min-width: 450px;
+    }
+
     .s-4-div-h1 {
         font-size: 46px;
     }
@@ -401,6 +406,10 @@
         color: #C6CAEE;
     }
 
+    .s-4-second-s-container {
+        min-width: 450px;
+    }
+
     .s-4-second-art-container {
         width: 80%; 
         margin: 0; 
@@ -412,6 +421,42 @@
         padding-bottom: 2px; 
         margin: 0;
     }
+
+
+    .s-5-ul-li {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 6%; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .s-5-li-div-container {
+        display: flex; 
+        align-content: center;
+        padding: 10px; 
+    }
+
+    .s-5-li-div-div {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        width: 210px;
+        margin: 10px; 
+    }
+
+    .s-5-li-img {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .s-5-li-p {
+        text-align: start;
+        font-size: 20px; 
+        color: #C6CAEE; 
+        width: 126px; 
+    }
+
 
 
     /****************************** Button ******************************/
@@ -708,6 +753,11 @@
             text-align: center;
         }
 
+        .s-4-first-s-container {
+            padding-right: 0; 
+            min-width: 100%;
+        }
+
         .s-4-div-h1 {
             font-size: 30px;
         }
@@ -721,8 +771,36 @@
             font-size: 16px;
         }
 
+        .s-4-second-s-container {
+            min-width: 100%;
+        }
+
         .s-4-second-art-container {
             text-align: start;
+        }
+
+
+        /* .s-5-ul-li {
+            display: flex;
+            flex-wrap: wrap;
+        } */
+
+        .s-5-li-div-div {
+            width: 150px;
+            margin: 10px; 
+        }
+
+        .s-5-li-img {
+            width: 50px; 
+            height: 50px;
+        }
+
+        .s-5-li-p {
+            text-align: center;
+            font-size: 16px; 
+            color: #C6CAEE; 
+            width: 120px;
+            margin-left: 10px;
         }
 
         
@@ -1119,13 +1197,13 @@
     <!-- *************************************** Fourth and Fifth Section *************************************** -->
     <section class="fourth-and-fifth-section side-padding-container">
         <div style="display: flex; flex-wrap: wrap;">
-            <section class="split s-4-none" style="padding-right: 50px; min-width: 450px;">
+            <section class="split s-4-none s-4-first-s-container">
                 <div class="centered" style="overflow: hidden;">
                     <img src="images/s-4/wallet.png" alt="GPoint Wallet" class="none" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
                 </div>
             </section>
 
-            <section class="split s-4-sec split-ccl" style="min-width: 450px;">
+            <section class="split s-4-sec split-ccl s-4-second-s-container">
                 <div class="space-30"></div>
                 <div>
                     <h1 class="s-4-div-h1">
@@ -1164,38 +1242,39 @@
             </section>
         </div>
 
-        <!-- <section style="display: flex; flex-wrap: wrap;">
-            <section class="split" style="margin: 0;">
-                <div style="font-size: 46px; text-align: center;">
-                    <h1>GPoint Ecosystem</h1>
+        <div style="display: flex; flex-wrap: wrap;">
+            <div class="mw-600-space-30"></div>
+            <section class="split s-4-sec split-ccl s-5-first-s-container">
+                <div style="text-align: center;">
+                    <h1 class="s-4-div-h1">GPoint Ecosystem</h1>
                 </div>
-                <div class="space-30"></div>
+                <div class="space-30 mw-600-space-10"></div>
                 <section style="text-align: center; margin: 0px auto;">
                     <ul style="list-style: none;">
-                        <li style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6%; flex-wrap: wrap; justify-content: center;">
-                            <div style="padding: 10px; display: flex; align-content: center;">
-                                <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
-                                    <img src="images/s-5/partners.png" alt="Partners icon" style="width: 70px; height: 70px;" />
-                                    <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">GPartners</p>
+                        <li class="s-5-ul-li">
+                            <div class="s-5-li-div-container">
+                                <div class="s-5-li-div-div">
+                                    <img src="images/s-5/partners.png" alt="Partners icon" class="s-5-li-img" />
+                                    <p class="s-5-li-p">GPartners</p>
                                 </div>
                             </div>
-                            <div style="padding: 10px; display: flex; align-content: center;">
-                                <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
-                                    <img src="images/s-5/value.png" alt="Value icon" style="width: 70px; height: 70px;" />
-                                    <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">GPoint Value</p>
+                            <div class="s-5-li-div-container">
+                                <div class="s-5-li-div-div">
+                                    <img src="images/s-5/value.png" alt="Value icon" class="s-5-li-img" />
+                                    <p class="s-5-li-p">GPoint Value</p>
                                 </div>
                             </div>
-                            <div style="padding: 10px; display: flex; align-content: center;">
-                                <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
-                                    <img src="images/s-5/mobile.png" alt="Mobile icon" style="width: 70px; height: 70px;" />
-                                    <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">Mobile App</p>
+                            <div class="s-5-li-div-container">
+                                <div class="s-5-li-div-div">
+                                    <img src="images/s-5/mobile.png" alt="Mobile icon" class="s-5-li-img" />
+                                    <p class="s-5-li-p">Mobile App</p>
                                 </div>
 
                             </div>
-                            <div style="padding: 10px; display: flex; align-content: center;">
-                                <div style="margin: 10px; display: flex; align-items: center; justify-content: center; width: 210px;">
-                                    <img src="images/s-5/worldmarket.png" alt="World Market icon" style="width: 70px; height: 70px;" />
-                                    <p style="font-size: 20px; color: #C6CAEE; width: 126px; text-align: start;">World Market</p>
+                            <div class="s-5-li-div-container">
+                                <div class="s-5-li-div-div">
+                                    <img src="images/s-5/worldmarket.png" alt="World Market icon" class="s-5-li-img" />
+                                    <p class="s-5-li-p">World Market</p>
                                 </div>
                             </div>
                         </li>
@@ -1203,17 +1282,17 @@
                 </section>
             </section>
 
-            <section class="split" style="margin: 0; padding-top: 0; min-width: 450px;">
+            <section class="split s-4-none" style="margin: 0; padding-top: 0; min-width: 450px;">
                 <div class="centered" style="max-height: 500px;">
                     <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" class="none" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
                 </div>
             </section>
-        </section> -->
+        </div>
     </section>
 
 
     <!-- *************************************** Sixth Section *************************************** -->
-    <!-- <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_4.jpg); background-position: 50% 0; background-size: contain; background-repeat: no-repeat;">
+    <section class="sixth-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_4.jpg); background-position: 50% 0; background-size: contain; background-repeat: no-repeat;">
         <section style="margin-left: 100px;">
             <div class="space-100"></div>
             <div>
@@ -1270,7 +1349,7 @@
                 </div>
             </article>
         </section>
-    </section> -->
+    </section>
 
     <!-- *************************************** Seventh Section *************************************** -->
     <!-- <section class="seventh-section side-padding-container" style="display: flex; background-image: url(images/bg/FInL\ BG_5.jpg); background-position: 50% 0; background-size: cover; background-repeat: no-repeat;">
