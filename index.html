@@ -164,6 +164,7 @@
     .third-section,
     .fourth-and-fifth-section,
     .sixth-section,
+    .sixth-and-seventh-section,
     .seventh-section,
     .ninth-section,
     .tenth-section {
@@ -485,6 +486,19 @@
         background-color: #172367;
     }
 
+
+    .sixth-and-seventh-section {
+        display: flex;
+        flex-direction: column;
+        /* background-image: url(images/bg/FInL\ BG_4.jpg); */
+        background-image: url(images/bg/FInL_BG_V2_4.jpg);
+        background-position: 50% 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #172367;
+    }
+
+
     .s-6-s-container {
         margin-left: 100px;
     }
@@ -526,8 +540,13 @@
         background-repeat: no-repeat;
     }
 
+    /* .s-7-sec {
+        display: flex;
+    } */
+
     .s-7-sec {
         display: flex;
+        margin-left: 90px;
     }
 
     .s-7-div-div {
@@ -579,10 +598,21 @@
         width: 80%;
     }
 
-    .s-7-img-container {
+    /* .s-7-img-container {
         position: relative;
         top: 150px;
         right: 80px;
+        min-width: 300px;
+    } */
+
+    .s-7-img-s-container {
+        margin-right: 90px;
+    }
+
+    .s-7-img-container {
+        position: relative;
+        top: 180px;
+        right: 100px;
         min-width: 300px;
     }
 
@@ -1169,9 +1199,16 @@
 
         .s-7-sec {
             flex-wrap: wrap;
+            margin-left: 0;
         }
 
-        .split.s-7-sec.split-ccl {
+        /* .split.s-7-sec.split-ccl {
+            text-align: center;
+            padding-left: 0;
+            width: 100%;
+        } */
+
+        .s-7-sec.split-ccl {
             text-align: center;
             padding-left: 0;
             width: 100%;
@@ -1217,6 +1254,10 @@
 
         .s-7-art-art-container {
             width: 100%;
+        }
+
+        .s-7-img-s-container {
+            margin: 0 auto;
         }
 
         .s-7-img-container {
@@ -1994,7 +2035,7 @@
 
 
     <!-- *************************************** Sixth Section *************************************** -->
-    <section class="sixth-section side-padding-container">
+    <!-- <section class="sixth-section side-padding-container">
         <section class="s-6-s-container">
             <div class="space-100"></div>
             <div>
@@ -2051,11 +2092,118 @@
                 </div>
             </article>
         </section>
+    </section> -->
+
+
+    <section class="sixth-and-seventh-section side-padding-container">
+        <section class="s-6-s-container">
+            <div class="space-100"></div>
+            <div>
+                <h2 class="s-6-s-div-h2">
+                    Be Part of
+                </h2>
+            </div>
+            <div>
+                <h1 class="s-6-s-div-h1">
+                    A Growing Financial Community
+                </h1>
+            </div>
+            <div class="space-30"></div>
+            <article style="margin: 0;">
+                <div class="s-6-art-div-container">
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;">
+                            WCL Membership
+                        </p>
+                    </div>
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;">
+                            WCL Travel Club
+                        </p>
+                    </div>
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;">
+                            Gift to Other Members
+                        </p>
+                    </div>
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;">
+                            Withdraw to Crypto Wallet
+                        </p>
+                    </div>
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;" id="currencymb">
+                            Transfer to GPoint Wallet / VISA
+                        </p>
+                    </div>
+                    <div class="s-6-art-div-each-div">
+                        <span style="margin: 0 10px 0 0; color: #F0C020;">&rarr;</span>
+                        <p style="margin: 0;" id="currency">
+                            Shop at GPoint Market / Affiliates
+                        </p>
+                    </div>
+                    <div class="space-100"></div>
+
+                </div>
+            </article>
+        </section>
+
+        <div class="space-200"></div>
+
+        <section class="s-7-sec split-ccl">
+            <div class="mw-600-space-30"></div>
+            <div class="s-7-s-div-container">
+                <div class="s-7-div-div">
+                    <h1 class="s-7-div-h1">
+                        Revolution
+                    </h1>
+                    <div class="s-7-div-h2-container">
+                        <h2 class="s-7-div-h2">Finl</h2>
+                    </div>
+                    <div class="mw-600-space-10"></div>
+                </div>
+                <article class="s-7-first-art-container">
+                    <p style="color: #C6CAEE;">
+                        FINL is designed to enable digital trust-guaranteed transactions using high-frequency transactions
+                        and smart contracts based on Delegated Proof of Reputation (DPoR).
+                    </p>
+                    <div class="space-200 mw-600-space-30"></div>
+                    <div class="space-200 s-7-none"></div>
+                    <div class="space-200 s-7-none"></div>
+                </article>
+                <article>
+                    <div class="s-7-second-art-div">
+                        <h2 class="s-7-art-h2-1">Next-Generation</h2>
+                        <h2 class="s-7-art-h2-2">Blockchain Mainnet FINL!</h2>
+                    </div>
+                    <div class="space-10"></div>
+                    <article class="s-7-art-art-container">
+                        <p style="color: #C6CAEE;">
+                            Blockchain combining speed-oriented consensus algorithm and high frequency transaction technology based on decentralization technology.
+                        </p>
+                    </article>
+                    <div class="space-200 s-7-none"></div>
+                    <div class="space-200 s-7-none"></div>
+                </article>
+            </div>
+            <section class="s-7-img-s-container">
+                <div class="s-7-img-container">
+                    <img src="images/s-7/finl_live.png" alt="FINL Live" class="s-7-img" />
+                </div>
+                <div class="mw-600-space-30"></div>
+            </section>
+        </section>
+        
     </section>
 
 
     <!-- *************************************** Seventh Section *************************************** -->
-    <section class="seventh-section side-padding-container">
+    <!-- <section class="seventh-section side-padding-container">
         <section class="split s-7-sec split-ccl">
             <div class="mw-600-space-30"></div>
             <div class="s-7-s-div-container">
@@ -2099,7 +2247,7 @@
                 <div class="mw-600-space-30"></div>
             </section>
         </section>
-    </section>
+    </section> -->
 
 
     <!-- *************************************** Eighth Section *************************************** -->
