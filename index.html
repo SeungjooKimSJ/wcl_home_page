@@ -389,6 +389,19 @@
         margin: 0;
     }
 
+    .s-3-img-container {
+        float: left;
+    }
+
+    .s-3-img {
+        width: 687px; 
+        height: 471px; 
+        position: relative; 
+        right: 35px; 
+        bottom: 25px; 
+        overflow-y: scroll;
+    }
+
     /****************************** Section 4 & 5 ******************************/
 
     .fourth-and-fifth-section {
@@ -404,6 +417,15 @@
     .s-4-first-s-container {
         padding-right: 50px;
         min-width: 450px;
+    }
+
+    .s-4-img {
+        width: 838px; 
+        height: 559px; 
+        overflow-y: scroll; 
+        position: relative; 
+        right: 80px; 
+        bottom: 90px;
     }
 
     .s-4-div-h1 {
@@ -474,6 +496,13 @@
         font-size: 20px;
         color: #C6CAEE;
         width: 126px;
+    }
+
+    .s-5-img {
+        width: 483px; 
+        position: relative; 
+        bottom: 110px; 
+        overflow-y: scroll;
     }
 
 
@@ -934,11 +963,73 @@
         } */
     }
 
+
     @media only screen and (max-width: 915px) {
         .none {
             display: none;
         }
     }
+
+
+    @media only screen and (max-width: 1450px) {
+        .mw-1450-space-50 {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            min-height: 50px;
+        }
+
+
+        .s-3-first-art-container {
+            width: 100%;
+        }
+
+        .s-3-img {
+            width: 600px;
+            height: 450px;
+            top: 80px;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        .s-4-img {
+            width: 738px;
+            height: 459px;
+            right: 80px;
+            bottom: 0;
+        }
+
+        .s-4-first-art-container {
+            width: 100%;
+        }
+
+
+        .s-5-img {
+            width: 380px;
+            bottom: 50px;
+        }
+    }
+
+
+    @media only screen and (max-width: 1280px) {
+        .s-3-img {
+            width: 550px;
+            height: 400px;
+            top: 200px;
+        }
+
+
+        .s-5-img {
+            width: 350px;
+        }
+    }
+
+
+    @media only screen and (max-width: 1050px) {
+        
+    }
+
 
     @media only screen and (max-width: 600px) {
         .mw-600-space-10 {
@@ -1937,8 +2028,8 @@
         <section class="split s-3-none" style="padding-right: 50px; min-width: 450px;">
             <div class="space-200"></div>
             <div class="space-200"></div>
-            <div class="centered" style="float: left; overflow: hidden;">
-                <img src="images/s-3/market.png" alt="GPoint Market" style="width: 687px; height: 471px; position: relative; right: 35px; bottom: 25px; overflow-y: scroll;" />
+            <div class="centered s-3-img-container">
+                <img src="images/s-3/market.png" alt="GPoint Market" class="s-3-img" />
             </div>
         </section>
     </section>
@@ -1949,7 +2040,7 @@
         <div style="display: flex; flex-wrap: wrap;">
             <section class="split s-4-none s-4-first-s-container">
                 <div class="centered" style="overflow: hidden;">
-                    <img src="images/s-4/wallet.png" alt="GPoint Wallet" class="none" style="width: 838px; height: 559px; overflow-y: scroll; position: relative; right: 80px; bottom: 90px;" />
+                    <img src="images/s-4/wallet.png" alt="GPoint Wallet" class="s-4-img" />
                 </div>
             </section>
 
@@ -1994,7 +2085,8 @@
             </section>
         </div>
 
-        <div class="mw-600-space-60"></div>
+        <!-- <div class="mw-600-space-60"></div> -->
+        <div class="mw-1450-space-50"></div>
 
         <div style="display: flex; flex-wrap: wrap;">
             <section class="split s-4-sec split-ccl s-5-first-s-container">
@@ -2037,7 +2129,7 @@
 
             <section class="split s-4-none" style="margin: 0; padding-top: 0; min-width: 450px;">
                 <div class="centered" style="max-height: 500px;">
-                    <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" class="none" style="max-width: 483px; position: relative; bottom: 110px; overflow-y: scroll;" />
+                    <img src="images/s-5/ecosystem.png" alt="GPoint Ecosystem" class="s-5-img" />
                 </div>
             </section>
         </div>
